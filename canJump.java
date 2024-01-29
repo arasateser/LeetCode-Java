@@ -2,6 +2,13 @@ class Solution {
     public boolean canJump(int[] nums) {
         int currentNum = nums[0];
 
+        if (nums.length == 1)
+            return true;
+
+        if (currentNum == 0)
+            return false;
+
+        
         for (int i = 0; i < nums.length; i++) {
             currentNum = nums[i];
 
@@ -20,7 +27,7 @@ class Solution {
                 }
 
                 //if you can do not land on a 'zero' continue from that index
-                continue;
+                //continue;
             }
 
         }
