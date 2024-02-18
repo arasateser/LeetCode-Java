@@ -10,7 +10,6 @@ class Solution {
         for (char k : magazine.toCharArray()) {
             letterCount.put(k, letterCount.getOrDefault(k, 0) - 1);
         }
-//Map.Entry<Character, Integer> entry : letterCount.entrySet()
         for (Integer value: letterCount.values() ) {
             if (value > 0)
                 return false;
