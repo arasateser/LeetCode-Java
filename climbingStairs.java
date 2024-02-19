@@ -1,5 +1,5 @@
 class Solution {
-    public int climbStairs(int n) {
+    public int climbStairs(int n) { //it's a fibonacci problem. use dynamic programming to understand the problem. Drawing the possible outcomes help me to understand
         int prev = 1;
         int prevPrev = 1;
         int cur = 0;
